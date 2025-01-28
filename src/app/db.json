@@ -1,0 +1,236 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "johndoe@example.com",
+      "password": "password123",
+      "name": "John Doe",
+      "country": "USA",
+      "interests": [
+        "reading",
+        "hiking",
+        "traveling"
+      ],
+      "messageSent": [
+        {
+          "to": "janesmith@example.com",
+          "content": "Hi Jane! It's great to connect with you.",
+          "timestamp": "2025-01-28T10:15:00Z"
+        },
+        {
+          "from": "johndoe@example.com",
+          "to": "janesmith@example.com",
+          "content": "zdravo",
+          "timestamp": "2025-01-28T21:37:44.672Z"
+        }
+      ],
+      "messageReceived": [
+        {
+          "from": "janesmith@example.com",
+          "content": "Hi John! Looking forward to chatting more.",
+          "timestamp": "2025-01-28T10:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "username": "janesmith@example.com",
+      "password": "securepassword",
+      "name": "Jane Smith",
+      "country": "Canada",
+      "interests": [
+        "photography",
+        "cooking",
+        "cycling"
+      ],
+      "messageSent": [
+        {
+          "to": "johndoe@example.com",
+          "content": "Hi John! Looking forward to chatting more.",
+          "timestamp": "2025-01-28T10:20:00Z"
+        }
+      ],
+      "messageReceived": [
+        {
+          "from": "johndoe@example.com",
+          "content": "Hi Jane! It's great to connect with you.",
+          "timestamp": "2025-01-28T10:15:00Z"
+        },
+        {
+          "from": "johndoe@example.com",
+          "to": "janesmith@example.com",
+          "content": "zdravo",
+          "timestamp": "2025-01-28T21:37:44.672Z"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "username": "michael@example.com",
+      "password": "mypassword",
+      "name": "Michael Scott",
+      "country": "USA",
+      "interests": [
+        "basketball",
+        "movies",
+        "cooking"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "4",
+      "username": "lisa@example.com",
+      "password": "lisasecurepassword",
+      "name": "Lisa Turner",
+      "country": "UK",
+      "interests": [
+        "art",
+        "traveling",
+        "music"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "5",
+      "username": "bob@example.com",
+      "password": "bob1234",
+      "name": "Bob Marley",
+      "country": "Jamaica",
+      "interests": [
+        "reggae",
+        "surfing",
+        "fishing"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "6",
+      "username": "alice@example.com",
+      "password": "alicepassword",
+      "name": "Alice Johnson",
+      "country": "Australia",
+      "interests": [
+        "yoga",
+        "writing",
+        "hiking"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "7",
+      "username": "charlie@example.com",
+      "password": "charliepass",
+      "name": "Charlie Brown",
+      "country": "USA",
+      "interests": [
+        "technology",
+        "cycling",
+        "reading"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "8",
+      "username": "david@example.com",
+      "password": "davidspassword",
+      "name": "David Lee",
+      "country": "South Korea",
+      "interests": [
+        "gaming",
+        "music",
+        "movies"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "9",
+      "username": "susan@example.com",
+      "password": "susanpass123",
+      "name": "Susan Miller",
+      "country": "Canada",
+      "interests": [
+        "reading",
+        "gardening",
+        "painting"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "10",
+      "username": "george@example.com",
+      "password": "georgepassword",
+      "name": "George White",
+      "country": "UK",
+      "interests": [
+        "soccer",
+        "traveling",
+        "history"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "11",
+      "username": "emma@example.com",
+      "password": "emmapass",
+      "name": "Emma Watson",
+      "country": "England",
+      "interests": [
+        "environment",
+        "photography",
+        "fashion"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "12",
+      "username": "oliver@example.com",
+      "password": "oliverpass123",
+      "name": "Oliver Smith",
+      "country": "USA",
+      "interests": [
+        "science",
+        "reading",
+        "technology"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "13",
+      "username": "sarah@example.com",
+      "password": "sarahpassword",
+      "name": "Sarah Brown",
+      "country": "Canada",
+      "interests": [
+        "dancing",
+        "music",
+        "cooking"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    },
+    {
+      "id": "14",
+      "username": "jack@example.com",
+      "password": "jack12345",
+      "name": "Jack Daniels",
+      "country": "USA",
+      "interests": [
+        "gaming",
+        "reading",
+        "traveling"
+      ],
+      "messageSent": [],
+      "messageReceived": []
+    }
+  ]
+}

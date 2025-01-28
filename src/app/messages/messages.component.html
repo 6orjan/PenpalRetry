@@ -1,0 +1,54 @@
+<div *ngIf="loading" class="loading">
+  Loading...
+</div>
+
+<div *ngIf="!user && !loading" class="login-message">
+  <h2>You must log in to view your messages.</h2>
+  <p>Please log in to access this page.</p>
+</div>
+
+<div *ngIf="user && !loading" class="messages-container">
+  <h2>Received Messages</h2>
+  <div *ngIf="messageError" class="error-message">{{ messageError }}</div>
+  
+  <div *ngIf="receivedMessages.length === 0 && !messageError" class="no-messages">
+    No messages received yet.
+  </div>
+
+  <ul *ngIf="receivedMessages.length > 0">
+    <li *ngFor="let message of receivedMessages">
+      <div class="message-header">
+        <strong>From: {{ message.from }}</strong>
+        <span class="timestamp">{{ message.timestamp | date:'medium' }}</span>
+      </div>
+      <div class="message-content">{{ message.content }}</div>
+    </li>
+  </ul>
+
+  <h2>Send New Message</h2>
+  <form (ngSubmit)="sendMessage()" #messageForm="ngForm">
+    <div class="form-group">
+      <label for="recipientUsername">To:</label>
+      <input 
+        type="text" 
+        id="recipientUsername" 
+        [(ngModel)]="recipientUsername" 
+        name="recipientUsername" 
+        [disabled]="loading"
+        required>
+    </div>
+    <div class="form-group">
+      <label for="newMessage">Message:</label>
+      <textarea 
+        id="newMessage" 
+        [(ngModel)]="newMessage" 
+        name="newMessage" 
+        [disabled]="loading"
+        required></textarea>
+    </div>
+    <div *ngIf="sendMessageError" class="error-message">{{ sendMessageError }}</div>
+    <button type="submit" [disabled]="loading || !messageForm.form.valid">
+      {{ loading ? 'Sending...' : 'Send' }}
+    </button>
+  </form>
+</div>

@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  main {
+    flex-grow: 1; /* Ensures the main content takes up available space */
+  }
+  

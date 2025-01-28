@@ -1,0 +1,24 @@
+<div *ngIf="!user">
+    
+    <form (ngSubmit)="login()">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" [(ngModel)]="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" required>
+      </div>
+      <div *ngIf="loginError" style="color:red">{{ loginError }}</div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
+  <div *ngIf="user">
+    <h2>Profile</h2>
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Country:</strong> {{ user.country }}</p>
+    <p><strong>Interests:</strong> {{ user.interests.join(', ') }}</p>
+    <button (click)="logoff()">Logoff</button>
+  </div>
+  

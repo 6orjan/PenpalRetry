@@ -1,0 +1,183 @@
+/* General styles for the messages section */
+.messages-container {
+  padding: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.messages-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, rgba(74, 144, 226, 0.15), rgba(124, 77, 255, 0.15));
+  z-index: 0;
+  transform: rotate(45deg);
+  animation: backgroundShift 5s ease-in-out infinite;
+}
+
+h2 {
+  color: #4a90e2;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease-out;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #ffffff;
+  margin-bottom: 1.8rem;
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.8s ease-out;
+}
+
+li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+li p {
+  margin: 0.6rem 0;
+}
+
+strong {
+  color: #333;
+  font-weight: 600;
+}
+
+em {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+form {
+  margin-top: 2.5rem;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-out;
+}
+
+form:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+form div {
+  margin-bottom: 1.8rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0066cc;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  animation: fadeIn 1s ease-out;
+  font-weight: 600;
+}
+
+/* Animation for fading in content */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(-20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* Animation for background shifting */
+@keyframes backgroundShift {
+  0% { background: linear-gradient(45deg, rgba(74, 144, 226, 0.1), rgba(124, 77, 255, 0.1)); }
+  50% { background: linear-gradient(45deg, rgba(74, 144, 226, 0.15), rgba(124, 77, 255, 0.15)); }
+  100% { background: linear-gradient(45deg, rgba(74, 144, 226, 0.1), rgba(124, 77, 255, 0.1)); }
+}
+
+/* Animation for sliding in list items */
+@keyframes slideIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
